@@ -12,19 +12,21 @@ export const Contact = styled.div`
   font-weight: ${p => p.theme.fontWeights.semibold};
   line-height: ${p => p.theme.lineHeights.body};
 
-  color: ${p => p.theme.colors.white};
   background-color: ${p => p.theme.colors.background};
+  border: 1px solid ${p => p.theme.colors.background};
   border-radius: ${p => p.theme.radii.normal};
   box-shadow: ${p => p.theme.shadows.third};
 `;
 
 export const ContactName = styled.span`
   display: inline-block;
+  color: ${p => p.theme.colors.primaryText};
 `;
 
 export const ContactNumber = styled.span`
   display: inline-block;
   min-width: 150px;
+  color: ${p => p.theme.colors.primaryText};
 `;
 
 export const IconButton = styled.button`
@@ -36,9 +38,9 @@ export const IconButton = styled.button`
   height: 40px;
   background-color: ${p => p.theme.colors.background};
   border-radius: ${p => p.theme.radii.round};
-  border: 2px solid ${p => p.theme.colors.white};
+  border: 2px solid ${p => p.theme.colors.primaryText};
 
-  color: ${p => p.theme.colors.white};
+  color: ${p => p.theme.colors.primaryText};
   cursor: pointer;
   transition: border-color 250ms ease-out, color 250ms ease-out;
 
